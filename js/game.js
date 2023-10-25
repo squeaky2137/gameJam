@@ -403,11 +403,14 @@ function gameLoop() {
 //collision detection
 function isColliding(player, polygon) {
     // Convert local polygon vertices to global coordinates
+
+
+
     for (const vertex of [
-        { x: player.x, y: player.y },
-        { x: player.x + player.width, y: player.y },
-        { x: player.x, y: player.y + player.height },
-        { x: player.x + player.width, y: player.y + player.height }
+        { x: player.x+player.hitbox.x, y: player.y+player.hitbox.y },
+        { x: player.x+player.hitbox.x + player.hitbox.width*playerScale, y: player.y+player.hitbox.y },
+        { x: player.x+player.hitbox.x, y: player.y+player.hitbox.y + player.hitbox.height*playerScale },
+        { x: player.x+player.hitbox.x + player.hitbox.width*playerScale, y: player.y+player.hitbox.y + player.hitbox.height*playerScale }
     ]) {
         // Check if the vertex is inside the polygon using the point-in-polygon algorithm
         if (isPointInPolygon(vertex, polygon)) {
