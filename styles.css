@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+    overflow: hidden; /* Prevent scrolling */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #2674af; /* Set the background color to your preference */
+}
+
+canvas {
+    border: 3px solid #000; /* Add a border around the canvas if desired */
+}
