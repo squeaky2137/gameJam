@@ -230,10 +230,10 @@ function draw() {
                             ctx.stroke();
                         }
                         //draw strokeRect around img
-                        ctx.strokeStyle = "black";
-                        //increase width of stroke
-                        ctx.lineWidth = 1;
-                        ctx.strokeRect(horiz, imgheight, image.width*scale, image.height*scale);
+                        // ctx.strokeStyle = "black";
+                        // //increase width of stroke
+                        // ctx.lineWidth = 1;
+                        // ctx.strokeRect(horiz, imgheight, image.width*scale, image.height*scale);
 
                     }
                 }
