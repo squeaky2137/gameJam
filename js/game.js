@@ -1,6 +1,6 @@
 const canvas = document.getElementById("gameCanvas");
 const ctx = canvas.getContext("2d");
-import level1 from "./level1.json" assert { type: 'json'};
+import level1 from "/level1.json" assert { type: 'json'};
 
 // Function to preload all images
 function preloadImages(callback) {
